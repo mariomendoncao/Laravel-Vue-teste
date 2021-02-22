@@ -10,6 +10,13 @@ composer global require laravel/installer
 
 laravel new example-app
 
+Para instalar o nodejs, substitua 10.x abaixo pela última versão estável
+
+cd ~
+curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt-get install -y nodejs
 
 Referências:
 https://laravel.com/docs/8.x/installation
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04-pt
