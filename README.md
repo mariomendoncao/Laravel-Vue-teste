@@ -17,6 +17,12 @@ curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt-get install -y nodejs
 
+Problema de verificação e certificado SSL
+
+
+git config --global http.sslVerify false
+
 Referências:
 https://laravel.com/docs/8.x/installation
 https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04-pt
+https://confluence.atlassian.com/fishkb/unable-to-clone-git-repository-due-to-self-signed-certificate-376838977.html
