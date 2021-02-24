@@ -1,10 +1,10 @@
-Container padrão pra executar as atividades de desenvolvimento do sabre.
+Container padrão pra executar as atividades de desenvolvimento do **sabre**.
 
-Para criar um projeto laravel, remova a pasta www, em seguida, use os comandos abaixo.
+Para criar um projeto Laravel, remova a pasta *www*, em seguida, use os comandos abaixo.
 
 composer create-project laravel/laravel example-app
 
-Caso queira deixar o instalador do larave em seu sistema, 
+Caso queira deixar o instalador do Laravel em seu sistema, 
 
 composer global require laravel/installer
 
@@ -19,10 +19,10 @@ sudo apt-get install -y nodejs
 
 Problema de verificação e certificado SSL
 
-
 git config --global http.sslVerify false
 
 Referências:
-https://laravel.com/docs/8.x/installation
-https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04-pt
-https://confluence.atlassian.com/fishkb/unable-to-clone-git-repository-due-to-self-signed-certificate-376838977.html
+
+1. [link to Instalação do Laravel 8] (https://laravel.com/docs/8.x/installation)
+2. https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04-pt
+3. https://confluence.atlassian.com/fishkb/unable-to-clone-git-repository-due-to-self-signed-certificate-376838977.html
