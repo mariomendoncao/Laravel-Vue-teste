@@ -15,13 +15,13 @@ docker ps
 
 Para criar um projeto Laravel, remova a pasta *www* (rm -fR www), em seguida, use o comando abaixo.
 
-composer create-project laravel/laravel example-app
+composer create-project laravel/laravel www
 
 ### Caso queira deixar o instalador do Laravel em seu sistema, 
 
 composer global require laravel/installer
 
-laravel new example-app
+laravel new www
 
 ### Configurar informações de banco de dados no .env
 
