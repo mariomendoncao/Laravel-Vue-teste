@@ -1,14 +1,52 @@
+# Container para Laravel
+
 Container padrão pra executar as atividades de desenvolvimento do **sabre**.
 
-Para criar um projeto Laravel, remova a pasta *www*, em seguida, use os comandos abaixo.
+## Procedimentos com docker 
+
+### Levantar container
+
+docker compose up -d --build
+
+### Verificar se os containers estão rodando
+docker ps
+
+## Instalar laravel
+
+Para criar um projeto Laravel, remova a pasta *www* (rm -fR www), em seguida, use o comando abaixo.
 
 composer create-project laravel/laravel example-app
 
-Caso queira deixar o instalador do Laravel em seu sistema, 
+### Caso queira deixar o instalador do Laravel em seu sistema, 
 
 composer global require laravel/installer
 
 laravel new example-app
+
+### Configurar informações de banco de dados no .env
+
+Após instalar o laravel, definir as variáveis de ambiente para acesso ao container de BD
+
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=A_1234567
+
+### Criar o banco de dados
+
+Acessar http://localhost:8080, onde está instalado o phpmyadmin, e criar o BD com o nome laravel ou outro que tiver escolhido.
+
+## Simplificar controller nas rotas.
+
+### Acessar 
+\www\app\Providers\RouteServiceProvider.php
+
+### descomentar a linha abaixo.
+protected $namespace = 'App\\Http\\Controllers';
+
+
 
 Para instalar o nodejs, substitua 10.x abaixo pela última versão estável
 
